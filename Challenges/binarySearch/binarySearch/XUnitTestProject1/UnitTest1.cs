@@ -25,12 +25,21 @@ namespace BinarySearchTest
         }
 
         [Fact]
-        public void CanReturnCorrectIndexIfArrayHasOnlyOne()
+        public void CanReturnCorrectIndexIfValueIsFirstInArray()
         {
-            int[] array = new int[1] { 1 };
+            int[] array = new int[5] { 1, 2, 3, 4, 5 };
             int value = 1;
 
             Assert.Equal(0, BinarySearch(array, value));
+        }
+
+        [Fact]
+        public void CanReturnCorrectIndexIfValueIsLastInArray()
+        {
+            int[] array = new int[5] { 1, 2, 3, 4, 5 };
+            int value = 5;
+
+            Assert.Equal(4, BinarySearch(array, value));
         }
     }
 }
