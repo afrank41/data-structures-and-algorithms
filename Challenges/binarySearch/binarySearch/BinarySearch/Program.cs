@@ -6,7 +6,10 @@ namespace ArrayBinarySearch
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            int[] array = new int[7] { 4, 8, 15, 16, 23, 42, 50};
+            int value = 50;
+
+            Console.WriteLine(BinarySearch(array, value));
         }
 
         public static int BinarySearch(int[] arr, int val)
@@ -16,7 +19,7 @@ namespace ArrayBinarySearch
 
             for (int i = 0; i < arr.Length / 2; i++)
             {
-                int mid = (end - start) / 2;
+                int mid = (start + end) / 2;
 
                 if(val == arr[mid])
                 {

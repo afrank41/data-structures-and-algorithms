@@ -9,8 +9,8 @@ namespace BinarySearchTest
         [Fact]
         public void CanReturnCorrectIndex()
         {
-            int[] array = new int[5] { 1, 2, 3, 4, 5 };
-            int value = 3;
+            int[] array = new int[7] { 4, 8, 15, 16, 23, 42, 50 };
+            int value = 15;
 
             Assert.Equal(2, BinarySearch(array, value));
         }
@@ -18,8 +18,8 @@ namespace BinarySearchTest
         [Fact]
         public void CannotReturnCorrectIndex()
         {
-            int[] array = new int[5] { 1, 2, 3, 4, 5 };
-            int value = 6;
+            int[] array = new int[7] { 4, 8, 15, 16, 23, 42, 50 };
+            int value = 100;
 
             Assert.Equal(-1, BinarySearch(array, value));
         }
@@ -27,8 +27,8 @@ namespace BinarySearchTest
         [Fact]
         public void CanReturnCorrectIndexIfValueIsFirstInArray()
         {
-            int[] array = new int[5] { 1, 2, 3, 4, 5 };
-            int value = 1;
+            int[] array = new int[7] { 4, 8, 15, 16, 23, 42, 50 };
+            int value = 4;
 
             Assert.Equal(0, BinarySearch(array, value));
         }
@@ -36,10 +36,10 @@ namespace BinarySearchTest
         [Fact]
         public void CanReturnCorrectIndexIfValueIsLastInArray()
         {
-            int[] array = new int[5] { 1, 2, 3, 4, 5 };
-            int value = 5;
+            int[] array = new int[7] { 4, 8, 15, 16, 23, 42, 50 };
+            int value = 50;
 
-            Assert.Equal(4, BinarySearch(array, value));
+            Assert.Equal(6, BinarySearch(array, value));
         }
     }
 }
