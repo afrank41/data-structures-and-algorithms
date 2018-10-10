@@ -12,6 +12,12 @@ namespace ArrayBinarySearch
             Console.WriteLine(BinarySearch(array, value));
         }
 
+        /// <summary>
+        /// Performs a binary search on an array of integers.
+        /// </summary>
+        /// <param name="arr">Sorted array of integers</param>
+        /// <param name="val">A value to search for in the input array</param>
+        /// <returns>Returns the index of the value in the array</returns>
         public static int BinarySearch(int[] arr, int val)
         {
             int start = 0;
