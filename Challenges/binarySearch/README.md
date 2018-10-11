@@ -1,4 +1,4 @@
-# Insert Shift Array
+# Binary Search
 
 ## Challenge
 Write a method called BinarySearch that takes in a sorted integer array and an integer. This method will search through the input array for the input integer and return the index of that integer. If the integer is not found it will return -1.
