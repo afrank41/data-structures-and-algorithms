@@ -11,7 +11,7 @@ This challenge is extra credit. Write a function that takes in an integer. This 
 2. Big O Space = O(n)
 	- This solution instantiates 3 integer variables to help with generating Fibonacci numbers
 
-## Solution
+## Solution Output
 
 ![Fibonacci Numbers](../../assets/Challenge4.PNG)
 
