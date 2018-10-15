@@ -6,10 +6,10 @@ namespace LinkedLists.Classes
 {
     class Node
     {
-        public int Value { get; set; }
+        public object Value { get; set; }
         public Node Next { get; set; }
 
-        public Node(int value, Node next)
+        public Node(object value)
         {
             Value = value;
         }
