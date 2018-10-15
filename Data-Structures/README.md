@@ -4,7 +4,7 @@ Contained here is an accumulation of different Data Structure and Algorithm impl
 
 ## Table of Contents
 
-1.[Linked List]()
+1.[Linked List](linkedList)
 
 1.[Stacks & Queues]()
 
