@@ -14,7 +14,7 @@ namespace LinkedLists.Classes
         /// <summary>
         /// The node that is used to traverse through the LL
         /// </summary>
-        public Node Current{ get; set; }
+        public Node Current { get; set; }
 
         /// <summary>
         /// LL requires a node at time of creation to the HEAD
@@ -24,6 +24,25 @@ namespace LinkedLists.Classes
         {
             Head = node;
             Current = node;
+        }
+
+        /// <summary>
+        /// We must traverse in order to print
+        /// Big O Time: O(n)
+        /// Big O Space: O(1)
+        /// </summary>
+        public void Print()
+        {
+            Current = Head;
+
+            while (Current.Next != null)
+            {
+                Console.WriteLine($"{Current.Value} -->");
+                Current = Current.Next;
+            }
+
+            Console.WriteLine($"{Current.Value} --> NULL");
+            Current = Head;
         }
 
         /// <summary>
@@ -39,24 +58,6 @@ namespace LinkedLists.Classes
             Current = Head;
         }
 
-        /// <summary>
-        /// We must traverse in order to print
-        /// Big O Time: O(n)
-        /// Big O Space: O(1)
-        /// </summary>
-        public void Print()
-        {
-            Current = Head;
-
-            while(Current.Next != null)
-            {
-                Console.WriteLine($"{Current.Value} -->");
-                Current = Current.Next;
-            }
-
-            Console.WriteLine($"{Current.Value} --> NULL");
-            Current = Head;
-        }
 
         /// <summary>
         /// We must traverse in order to append a new node to LL
@@ -68,7 +69,7 @@ namespace LinkedLists.Classes
         {
             Current = Head;
 
-            while(Current.Next != null)
+            while (Current.Next != null)
             {
                 Current = Current.Next;
             }
@@ -87,7 +88,7 @@ namespace LinkedLists.Classes
         public void AddBefore(Node newNode, Node existingNode)
         {
             Current = Head;
-            if(Head.Value == existingNode.Value)
+            if (Head.Value == existingNode.Value)
             {
                 Add(newNode);
                 return;
@@ -95,7 +96,7 @@ namespace LinkedLists.Classes
 
             while (Current.Next != null)
             {
-                if(Current.Next.Value == existingNode.Value)
+                if (Current.Next.Value == existingNode.Value)
                 {
                     newNode.Next = existingNode;
                     Current.Next = newNode;
@@ -104,6 +105,53 @@ namespace LinkedLists.Classes
 
                 Current = Current.Next;
             }
+
+            Current = Head;
+        }
+
+        /// <summary>
+        /// We must traverse in order to add a new node to LL
+        /// Big O Time: O(n)
+        /// Big O Space: O(1)
+        /// </summary>
+        /// <param name="newNode">Node to be added to LL</param>
+        /// <param name="existingNode">Node that is preceding the new node</param>
+        public void AddAfter(Node newNode, Node existingNode)
+        {
+            Current = Head;
+            while (Current.Next != null)
+            {
+                if (Current.Value == existingNode.Value)
+                {
+                    newNode.Next = Current.Next;
+                    Current.Next = newNode;
+                    break;
+                }
+
+                Current = Current.Next;
+            }
+        }
+
+        /// <summary>
+        /// We must traverse in order to find the node in the LL
+        /// </summary>
+        /// <param name="value">value of node you are looking for</param>
+        /// <returns>returns the node that has the value you searched for</returns>
+        public Node Find(object value)
+        {
+            Current = Head;
+
+            while (Current.Next != null)
+            {
+                if (Current.Value == value)
+                {
+                    return Current;
+                }
+
+                Current = Current.Next;
+            }
+
+            return Current.Value.ToString() == value.ToString() ? Current : null;
         }
     }
 }

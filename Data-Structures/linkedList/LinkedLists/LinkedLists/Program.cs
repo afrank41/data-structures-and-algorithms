@@ -7,14 +7,20 @@ namespace LinkedLists
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Hello World!\n");
 
             Node node1 = new Node(7);
             Node node2 = new Node("cat");
+            Node node3 = new Node("dog");
+            Node node4 = new Node(14);
 
             LinkedList list = new LinkedList(node1);
             list.Append(node2);
+            list.Append(node3);
+            list.Append(node4);
             list.Print();
+            Node foundNode = list.Find("cat");
+            Console.WriteLine(foundNode.Value);
         }
     }
 }
