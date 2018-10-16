@@ -16,4 +16,10 @@
     <ProjectReference Include="..\NthFromEnd\NthFromEnd.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="LinkedLists">
+      <HintPath>..\..\..\..\Data-Structures\linkedList\LinkedLists\LinkedLists\bin\Debug\netcoreapp2.1\LinkedLists.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

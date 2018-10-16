@@ -7,9 +7,9 @@ namespace NthFromEnd
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine(NthFromEnd(0));
-            Console.WriteLine(NthFromEnd(4));
-            Console.WriteLine(NthFromEnd(2));
+            Console.WriteLine(NthNodeFromEnd(0));
+            Console.WriteLine(NthNodeFromEnd(4));
+            Console.WriteLine(NthNodeFromEnd(2));
         }
 
         /// <summary>
@@ -17,7 +17,7 @@ namespace NthFromEnd
         /// </summary>
         /// <param name="n">nth number</param>
         /// <returns>returns the value of the nth node from the end of the LL</returns>
-        public static object NthFromEnd(int n)
+        public static object NthNodeFromEnd(int n)
         {
             Node node1 = new Node(10);
             Node node2 = new Node(20);
@@ -41,7 +41,8 @@ namespace NthFromEnd
 
             if(n < 0 || n > counter)
             {
-                throw new Exception("You input is less than zero or greater than the length of the linked list");
+                Exception ex = new Exception("Your input is bad");
+                return ex.Message;
             }
 
             list.Current = list.Head;
