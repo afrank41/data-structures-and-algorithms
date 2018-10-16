@@ -17,7 +17,7 @@ namespace LinkedListTest
             Node node3 = new Node("dog");
             Node node4 = new Node(value);
 
-            LinkedList list = new LinkedList(node1);
+            LinkdList list = new LinkdList(node1);
             list.Append(node2);
             list.Append(node3);
             list.Add(node4);
@@ -36,7 +36,7 @@ namespace LinkedListTest
             Node node3 = new Node("dog");
             Node node4 = new Node(value);
 
-            LinkedList list = new LinkedList(node1);
+            LinkdList list = new LinkdList(node1);
             list.Append(node2);
             list.Append(node3);
             list.Append(node4);
@@ -55,7 +55,7 @@ namespace LinkedListTest
             Node node3 = new Node("dog");
             Node node4 = new Node(value);
 
-            LinkedList list = new LinkedList(node1);
+            LinkdList list = new LinkdList(node1);
             list.Append(node2);
             list.Append(node3);
             list.AddBefore(node4, node3);
@@ -74,7 +74,7 @@ namespace LinkedListTest
             Node node3 = new Node("dog");
             Node node4 = new Node(value);
 
-            LinkedList list = new LinkedList(node1);
+            LinkdList list = new LinkdList(node1);
             list.Append(node2);
             list.Append(node3);
             list.AddAfter(node4, node2);
@@ -93,7 +93,7 @@ namespace LinkedListTest
             Node node3 = new Node("dog");
             Node node4 = new Node(value);
 
-            LinkedList list = new LinkedList(node1);
+            LinkdList list = new LinkdList(node1);
             list.Append(node2);
             list.Append(node3);
             list.Append(node4);

@@ -7,3 +7,4 @@
 3. [Challenge: Binary Search](Challenges/binarySearch)
 4. [EC Challenge: Fibonacci Numbers](Challenges/fibonacciNumbers)
 5. [Implementation: Linked Lists](Data-Structures/linkedList)
+6. [Challenge: Nth Node From End](Challenges/nthFromEnd)
