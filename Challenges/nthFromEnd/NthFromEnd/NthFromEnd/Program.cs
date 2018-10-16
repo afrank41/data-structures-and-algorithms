@@ -33,7 +33,7 @@ namespace NthFromEnd
             int counter = 0;
 
             list.Current = list.Head;
-            while(list.Current != null)
+            while(list.Current.Next != null)
             {
                 list.Current = list.Current.Next;
                 counter++;
