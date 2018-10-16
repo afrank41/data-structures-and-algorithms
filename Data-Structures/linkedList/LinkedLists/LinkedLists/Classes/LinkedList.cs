@@ -134,6 +134,8 @@ namespace LinkedLists.Classes
 
         /// <summary>
         /// We must traverse in order to find the node in the LL
+        /// Big O Time: O(n)
+        /// Big O Space: O(1)
         /// </summary>
         /// <param name="value">value of node you are looking for</param>
         /// <returns>returns the node that has the value you searched for</returns>

@@ -22,7 +22,7 @@ namespace LinkedListTest
             list.Append(node3);
             list.Add(node4);
 
-            Assert.Equal(list.Head.Value, list.Find(value).Value);
+            Assert.Equal(list.Head.Value, value);
         }
 
         [Theory]
@@ -77,7 +77,7 @@ namespace LinkedListTest
             LinkedList list = new LinkedList(node1);
             list.Append(node2);
             list.Append(node3);
-            list.AddBefore(node4, node2);
+            list.AddAfter(node4, node2);
 
             Assert.Equal(value, list.Find(value).Value);
         }
@@ -100,6 +100,5 @@ namespace LinkedListTest
 
             Assert.Equal(value, list.Find(value).Value);
         }
-
     }
 }

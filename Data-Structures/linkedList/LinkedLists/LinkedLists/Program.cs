@@ -19,8 +19,9 @@ namespace LinkedLists
             list.Append(node3);
             list.Append(node4);
             list.Print();
-            Node foundNode = list.Find("cat");
-            Console.WriteLine(foundNode.Value);
+            object searchTerm = "dog";
+            Node foundNode = list.Find(searchTerm);
+            Console.WriteLine($"You searched for {searchTerm} and found {foundNode.Value}");
         }
     }
 }
