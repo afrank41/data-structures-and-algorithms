@@ -1,17 +1,17 @@
-# Binary Search
+# Nth Node From End
 
 ## Challenge
-Write a method called BinarySearch that takes in a sorted integer array and an integer. This method will search through the input array for the input integer and return the index of that integer. If the integer is not found it will return -1.
+Write a method that takes in an integer value and finds the nth node from the end of a linked list. The method then returns the value of the node found. It is assumed you have access to the LinkdList class and Node class from the linked list implementation challenge.
 
 ## Approach & Efficiency
 
-1. Big O Time = O(log n)
-	- This solution only loops through half of the input array at most at a time
+1. Big O Time = O(n)
+	- This solution iterates through a linked list to find the node needed
 
 2. Big O Space = O(1)
-	- This solution does not involve creating new arrays or variables that need space allocated to them
+	- This solution does not need to allocate more memory such as instantiating a new linked list to function
 
 ## Solution
 
-![Binary Search](../../assets/Challenge3.jpg)
+![Nth Node From End](../../assets/Challenge5.jpg)
 
