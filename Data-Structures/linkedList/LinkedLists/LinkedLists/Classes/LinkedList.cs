@@ -4,7 +4,7 @@ using System.Text;
 
 namespace LinkedLists.Classes
 {
-    class LinkedList
+    public class LinkedList
     {
         /// <summary>
         /// Always points to the first node in the LL
