@@ -19,9 +19,9 @@ namespace LinkedLists
             list.Add(node2);
             list.Append(node3);
             list.AddBefore(node4, node1);
-            list.AddAfter(node5, node1);
+            list.AddAfter(node5, node3);
             list.Print();
-            object searchTerm = "bird";
+            object searchTerm = 14;
             Node foundNode = list.Find(searchTerm);
             Console.WriteLine($"You searched for {searchTerm} and found {foundNode.Value}");
         }

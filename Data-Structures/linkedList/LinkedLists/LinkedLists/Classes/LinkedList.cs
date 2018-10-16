@@ -119,13 +119,13 @@ namespace LinkedLists.Classes
         public void AddAfter(Node newNode, Node existingNode)
         {
             Current = Head;
-            while (Current.Next != null)
+            while (Current != null)
             {
                 if (Current.Value == existingNode.Value)
                 {
                     newNode.Next = Current.Next;
                     Current.Next = newNode;
-                    break;
+                    return;
                 }
 
                 Current = Current.Next;
@@ -145,7 +145,7 @@ namespace LinkedLists.Classes
 
             while (Current.Next != null)
             {
-                if (Current.Value == value)
+                if (Current.Value.ToString() == value.ToString())
                 {
                     return Current;
                 }
