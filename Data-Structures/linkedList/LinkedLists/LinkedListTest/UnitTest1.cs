@@ -24,5 +24,25 @@ namespace LinkedListTest
 
             Assert.Equal(list.Head.Value, list.Find(value).Value);
         }
+
+        [Theory]
+        [InlineData(20)]
+        [InlineData("bird")]
+        [InlineData(true)]
+        public void LLCanAppend(object value)
+        {
+            Node node1 = new Node(7);
+            Node node2 = new Node("cat");
+            Node node3 = new Node("dog");
+            Node node4 = new Node(value);
+
+            LinkedList list = new LinkedList(node1);
+            list.Append(node2);
+            list.Append(node3);
+            list.Append(node4);
+
+            Assert.Equal(value, list.Find(value).Value);
+        }
+
     }
 }
