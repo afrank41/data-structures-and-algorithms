@@ -4,7 +4,7 @@ using System.Text;
 
 namespace LinkedLists.Classes
 {
-    public class LinkedList
+    public class LinkdList
     {
         /// <summary>
         /// Always points to the first node in the LL
@@ -20,7 +20,7 @@ namespace LinkedLists.Classes
         /// LL requires a node at time of creation to the HEAD
         /// </summary>
         /// <param name="node">Node to be set as head of new LL</param>
-        public LinkedList(Node node)
+        public LinkdList(Node node)
         {
             Head = node;
             Current = node;
