@@ -44,6 +44,12 @@ namespace MergeLinkLists
             LL1.Print();
         }
 
+        /// <summary>
+        /// Merge two link lists by zippering them together. Every other node will be a node from the second given LL
+        /// </summary>
+        /// <param name="LL1">The LL that will be traversed and operated on</param>
+        /// <param name="LL2">The LL that will be zippered into the first LL</param>
+        /// <returns>returns the head node of the merged LL</returns>
         public static Node MergeLists(LinkdList LL1, LinkdList LL2)
         {
             Node temp = LL2.Head.Next;
