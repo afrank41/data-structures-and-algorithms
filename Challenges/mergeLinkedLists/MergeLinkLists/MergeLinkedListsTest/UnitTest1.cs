@@ -58,9 +58,11 @@ namespace MergeLinkedListsTest
             Node node6 = new Node(60);
             Node node7 = new Node(70);
             Node node8 = new Node(80);
+            Node node9 = new Node(90);
             LinkdList LL2 = new LinkdList(node6);
             LL2.Append(node7);
             LL2.Append(node8);
+            LL2.Append(node9);
 
             Assert.Equal(LL1.Head, MergeLists(LL1, LL2));
         }
