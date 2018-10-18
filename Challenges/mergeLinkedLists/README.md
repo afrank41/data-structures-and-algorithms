@@ -1,4 +1,4 @@
-# Nth Node From End
+# Merge Linked Lists
 
 ## Challenge
 Write a method that takes in two linked lists and returns the head of a merged linked list. The method should merge the two linked lists as if they are being zippered together. After "zippering" the linked lists, return the head of the merged linked list to be a reference. <br> 
