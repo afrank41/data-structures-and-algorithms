@@ -29,9 +29,9 @@ namespace MergeLinkLists
             LL2.Append(node7);
             LL2.Append(node8);
             LL2.Append(node9);
-            LL2.Append(node10);
-            LL2.Append(node11);
-            LL2.Append(node12);
+            //LL2.Append(node10);
+            //LL2.Append(node11);
+            //LL2.Append(node12);
 
             Console.WriteLine("Linked List 1:");
             LL1.Print();
@@ -55,7 +55,7 @@ namespace MergeLinkLists
             Node temp = LL2.Head.Next;
             LL1.Current = LL1.Head;
 
-            while (LL1.Current.Next != null)
+            while (LL1.Current.Next.Next != null)
             {
                 LL1.AddAfter(LL2.Head, LL1.Current);
                 if (temp == null)
@@ -64,10 +64,10 @@ namespace MergeLinkLists
                 }
                 LL2.Head = temp;
                 temp = LL2.Head.Next;
-                LL1.Current = LL1.Current.Next.Next;                
+                LL1.Current = LL1.Current.Next.Next;
             }
 
-            if(LL1.Current.Next == null)
+            if(LL2.Head != null)
             {
                 LL1.Append(LL2.Head);
                 LL2.Head = null;
