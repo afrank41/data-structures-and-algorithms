@@ -1,35 +1,36 @@
 # Stacks and Queues
 
 ## Description/Challenge
-Implement a singly linked list with functionality to Add, Append, AddBefore, AddAfter, Print, and Find. The project should have a Node class with a value and next property. The project should also include a LinkedList class with a head and current property as well as methods that define the different behaviors it has.
+Implement a stack and a queue with functionality to Peek, Push, and Pop to a stack and to Peek, Enqueue, and Dequeue to a queue. The project should have a Node class with a Value and Next property. The project should also include a Stack class with a Top property with associated methods as well as a Queue class that has both a Front and Rear property with associated methods.
 
 ## Linked List Methods
-1. Print()
-    * This methods prints all values of the nodes in a linked list
-    * Big O Time: O(n)
-    * Big O Space: O(1)
+### Stack
+Big O -<br>
+Time: O(1)<br>
+Space: O(1)<br>
 
-2. Add()
-    * This method adds a new node at the beginning of a linked list
-    * Big O Time: O(1)
-    * Big O Space: O(1)
+1. Peek()
+    * This method looks at the top node in a stack and returns it
 
-3. Append()
-    * This method adds a new node at the end of a linked list
-    * Big O Time: O(n)
-    * Big O Space: O(1)
+2. Push()
+    * This methods add a new node to the top of a stack
 
-4. AddBefore()
-    * This method adds a new node before an existing node of a linked list
-    * Big O Time: O(n)
-    * Big O Space: O(1)
+3. Pop()
+    * This method removed the top node in a stack and returns it
 
-5. AddAfter()
-    * This method adds a new node after an existing node of a linked list
-    * Big O Time: O(n)
-    * Big O Space: O(1)
+### Queue
+Big O -<br>
+Time: O(1)<br>
+Space: O(1)<br>
 
-4. Find()
-    * This method finds a node in a linked list and returns that node
-    * Big O Time: O(n)
-    * Big O Space: O(1)
+1. Peek()
+    * This method looks at the front node in a queue and returns it
+
+2. Enqueue()
+    * This method adds a new node to the rear of a queue
+
+3. Dequeue()
+    * This method removed the front node in a queue and returns it
+
+## Visual Example Stack and Queue Ordering
+![Stack and Queue Order](assets/stackQueueVisual.PNG)

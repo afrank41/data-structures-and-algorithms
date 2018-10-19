@@ -21,7 +21,7 @@ namespace StackQueue
             stack.Push(node4);
             stack.Push(node5);
 
-            Console.WriteLine("Nodes in my stack:");
+            Console.WriteLine("Node order in a stack:");
             Console.WriteLine(stack.Peek().Value);
             stack.Pop();
             Console.WriteLine(stack.Peek().Value);
@@ -40,7 +40,7 @@ namespace StackQueue
             queue.Enqueue(node4);
             queue.Enqueue(node5);
 
-            Console.WriteLine("\nNodes in my queue:");
+            Console.WriteLine("\nNode order in a queue:");
             Console.WriteLine(queue.Peek().Value);
             queue.Dequeue();
             Console.WriteLine(queue.Peek().Value);
