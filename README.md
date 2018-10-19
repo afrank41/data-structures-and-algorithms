@@ -9,3 +9,4 @@
 5. [Implementation: Linked Lists](Data-Structures/linkedList)
 6. [Challenge: Nth Node From End](Challenges/nthFromEnd)
 7. [Challenge: Merge Link Lists](Challenges/mergeLinkedLists)
+8. [Implementation: Stacks and Queues](Data-Structures/stacksQueues)
