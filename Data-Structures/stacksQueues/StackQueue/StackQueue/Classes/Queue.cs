@@ -10,6 +10,12 @@ namespace StackQueue.Classes
         
         public Node Rear { get; set; }
 
+        public Queue(Node node)
+        {
+            Front = node;
+            Rear = node;
+        }
+
         /// <summary>
         /// Looks at the Front node in a queue
         /// </summary>
@@ -19,12 +25,20 @@ namespace StackQueue.Classes
             return Front;
         }
 
+        /// <summary>
+        /// Adds a new node to the rear of a queue
+        /// </summary>
+        /// <param name="node">node to be added to the rear</param>
         public void Enqueue(Node node)
         {
             Rear.Next = node;
             Rear = node;
         }
 
+        /// <summary>
+        /// Removes the Front node from a queue
+        /// </summary>
+        /// <returns>returns the node that was removed</returns>
         public Node Dequeue()
         {
             Node temp = Front;
