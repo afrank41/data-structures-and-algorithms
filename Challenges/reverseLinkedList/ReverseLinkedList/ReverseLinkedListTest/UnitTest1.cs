@@ -8,7 +8,7 @@ namespace ReverseLinkedListTest
     public class UnitTest1
     {
         /// <summary>
-        /// Checks to see if an even lengthed linked list is a palindrome
+        /// Checks to see if linked list can be reversed
         /// </summary>
         [Fact]
         public void CheckIfListIsReversed()

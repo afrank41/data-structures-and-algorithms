@@ -1,17 +1,17 @@
-# Fibonacci Numbers
+# Reverse A Linked List
 
 ## Challenge
-This challenge is extra credit. Write a function that takes in an integer. This function takes the integer and returns the nth number of the Fibonacci sequence based on the integer given.
+This challenge is extra credit. Write a function that takes in a linked list. This function takes the linked list, reverses it in place, and returns the reversed linked list.
 
 ## Approach & Efficiency
 
 1. Big O Time = O(n)
-	- This solution loops an n number of times to generate Fibonacci numbers
+	- This solution traverses the input linked list and changes the pointers of the nodes
 
-2. Big O Space = O(n)
-	- This solution instantiates 3 integer variables to help with generating Fibonacci numbers
+2. Big O Space = O(1)
+	- This solution reverses the linked list in place without needing to create another linked list with new nodes
 
 ## Solution Output
 
-![Fibonacci Numbers](../../assets/Challenge4.PNG)
+![Fibonacci Numbers](../../assets/reverseLL.PNG)
 

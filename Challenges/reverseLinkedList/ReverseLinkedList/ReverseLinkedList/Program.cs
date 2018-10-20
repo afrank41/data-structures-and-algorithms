@@ -16,6 +16,10 @@ namespace ReverseLinkedList
             list.Append(node3);
             list.Append(node4);
 
+            Console.WriteLine("Original Linked List:");
+            list.Print();
+
+            Console.WriteLine("\nReversed Linked List:");
             ReverseLL(list).Print();
         }
 
