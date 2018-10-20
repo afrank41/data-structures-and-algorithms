@@ -68,6 +68,16 @@ namespace PalindromeLLTest
         [Fact]
         public void ReturnsFalseIfLLIsNotPalindrome()
         {
+            Node node1 = new Node("A");
+            Node node2 = new Node("B");
+            Node node3 = new Node("C");
+            Node node4 = new Node("D");
+            LinkdList list = new LinkdList(node1);
+            list.Append(node2);
+            list.Append(node3);
+            list.Append(node4);
+
+            Assert.False(PalindromeCheck(list));
 
         }       
     }

@@ -32,6 +32,8 @@ namespace PalindromeLL
             Console.WriteLine("\nSecond Linked List Test:");
             list2.Print();
             Console.WriteLine($"\nIs Palindrome: {PalindromeCheck(list2)}");
+
+            Console.WriteLine(7 / 2);
         }
 
         public static bool PalindromeCheck(LinkdList list)
