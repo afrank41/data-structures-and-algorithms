@@ -23,6 +23,11 @@ namespace ReverseLinkedList
             ReverseLL(list).Print();
         }
 
+        /// <summary>
+        /// Reverses a linked list in place
+        /// </summary>
+        /// <param name="list">linked list to be reversed</param>
+        /// <returns>returns the linked list after being reversed</returns>
         public static LinkdList ReverseLL(LinkdList list)
         {
             Node prev = null;
