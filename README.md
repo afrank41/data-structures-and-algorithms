@@ -10,5 +10,5 @@
 6. [Challenge: Nth Node From End](Challenges/nthFromEnd)
 7. [Challenge: Merge Link Lists](Challenges/mergeLinkedLists)
 8. [EC Challenge: Reverse A Linked List](Challenges/reverseLinkedList)
-9. [EC Challenge: Check If Linked List Is Palindrome](#)
+9. [EC Challenge: Check If Linked List Is Palindrome](Challenges/palindromeLinkedList)
 10. [Implementation: Stacks and Queues](Data-Structures/stacksQueues)
