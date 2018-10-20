@@ -1,4 +1,4 @@
-# Reverse A Linked List
+# Check If Linked List Is Palindrome
 
 ## Challenge
 This challenge is extra credit. Write a function that takes in a linked list. This function takes the linked list, checks if it is a palindrome, and returns true or false based on the results.
