@@ -15,7 +15,7 @@ namespace StackQueue
             Node node5 = new Node(50);
 
             // Stack
-            Stack stack = new Stack(node1);
+            Stack stack = new Stack(null);
             stack.Push(node2);
             stack.Push(node3);
             stack.Push(node4);
@@ -30,27 +30,27 @@ namespace StackQueue
             stack.Pop();
             Console.WriteLine(stack.Peek().Value);
             stack.Pop();
-            Console.WriteLine(stack.Peek().Value);
-            stack.Pop();
+            //Console.WriteLine(stack.Peek().Value);
+            //stack.Pop();
 
-            // Queue
-            Queue queue = new Queue(node1);
-            queue.Enqueue(node2);
-            queue.Enqueue(node3);
-            queue.Enqueue(node4);
-            queue.Enqueue(node5);
+            //// Queue
+            //Queue queue = new Queue(node1);
+            //queue.Enqueue(node2);
+            //queue.Enqueue(node3);
+            //queue.Enqueue(node4);
+            //queue.Enqueue(node5);
 
-            Console.WriteLine("\nNode order in a queue:");
-            Console.WriteLine(queue.Peek().Value);
-            queue.Dequeue();
-            Console.WriteLine(queue.Peek().Value);
-            queue.Dequeue();
-            Console.WriteLine(queue.Peek().Value);
-            queue.Dequeue();
-            Console.WriteLine(queue.Peek().Value);
-            queue.Dequeue();
-            Console.WriteLine(queue.Peek().Value);
-            queue.Dequeue();
+            //Console.WriteLine("\nNode order in a queue:");
+            //Console.WriteLine(queue.Peek().Value);
+            //queue.Dequeue();
+            //Console.WriteLine(queue.Peek().Value);
+            //queue.Dequeue();
+            //Console.WriteLine(queue.Peek().Value);
+            //queue.Dequeue();
+            //Console.WriteLine(queue.Peek().Value);
+            //queue.Dequeue();
+            //Console.WriteLine(queue.Peek().Value);
+            //queue.Dequeue();
         }
     }
 }

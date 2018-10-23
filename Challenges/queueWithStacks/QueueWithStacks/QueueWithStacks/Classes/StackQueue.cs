@@ -5,7 +5,7 @@ using StackQueue.Classes;
 
 namespace QueueWithStacks.Classes
 {
-    public class StackQueue
+    public class Cue
     {
         Stack stack1 = new Stack(null);
         Stack stack2 = new Stack(null);
@@ -14,7 +14,7 @@ namespace QueueWithStacks.Classes
 
         public Stack Stack2 { get; set; }
 
-        public StackQueue(Stack stack1, Stack stack2)
+        public Cue(Stack stackOne, Stack stackTwo)
         {
             Stack1 = stack1;
             Stack2 = stack2;
@@ -35,16 +35,21 @@ namespace QueueWithStacks.Classes
         /// <returns>returns the node that was dequeued</returns>
         public Node Dequeue()
         {
-            while(stack2.Peek().Next != null)
+            if (Stack2.Peek() == null)
             {
-                stack1.Push(stack2.Pop());
+                return null;
             }
 
-            Node temp = stack2.Pop();
-
-            while (stack1.Peek() != null)
+            while(Stack2.Peek().Next != null)
             {
-                stack2.Push(stack1.Pop());
+                Stack1.Push(Stack2.Pop());
+            }
+
+            Node temp = Stack2.Pop();
+
+            while (Stack1.Peek() != null)
+            {
+                Stack2.Push(Stack1.Pop());
             }
 
             return temp;
