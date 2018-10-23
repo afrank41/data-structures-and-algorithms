@@ -4,8 +4,8 @@ using System.Text;
 
 namespace FifoAnimalShelter.Classes
 {
-    public class Cat : Animal
+    class Fish : Animal
     {
-        public override string Type { get; set; } = "cat";
+        public override string Type { get; set; } = "fish";
     }
 }
