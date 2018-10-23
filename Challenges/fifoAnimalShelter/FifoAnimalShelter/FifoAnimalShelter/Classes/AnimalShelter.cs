@@ -44,12 +44,62 @@ namespace FifoAnimalShelter.Classes
         }
 
         /// <summary>
-        /// Removes either a cat or dog node from the front of its respective queue within the animal shelter
+        /// Removed an animal from the front of the animal shelter queue
         /// </summary>
-        /// <param name="animal">"cat" or "dog" to specify which queue to have node removed from front</param>
-        /// <returns></returns>
+        /// <returns>returns the animal removed</returns>
+        public Animal Dequeue()
+        {
+            Animal temp = Front;
+            Front = Front.Next;
+            temp.Next = null;
+            return temp;
+        }
+
+        /// <summary>
+        /// Removes the first cat or dog from the animal shelter queue
+        /// </summary>
+        /// <param name="animal">the animal type to be removed from queue</param>
+        /// <returns>returns the animal object that was removed</returns>
         public Animal Dequeue(string animal)
-        {       
+        {   
+            if (animal == "cat")
+            {
+                Animal temp = Front;
+                while (!(Front is Cat))
+                {
+                    Enqueue(Dequeue());
+                }
+
+                Animal cat = Dequeue();
+
+                while(Front != temp)
+                {
+                    Enqueue(Dequeue());
+                }
+
+                return cat;
+            }
+            else if (animal == "dog")
+            {
+                Animal temp = Front;
+                while (!(Front is Dog))
+                {
+                    Enqueue(Dequeue());
+                }
+
+                Animal dog = Dequeue();
+
+                while (Front != temp)
+                {
+                    Enqueue(Dequeue());
+                }
+
+                return dog;
+            }
+            else
+            {
+                return Front;
+            }
         }
     }
 }
