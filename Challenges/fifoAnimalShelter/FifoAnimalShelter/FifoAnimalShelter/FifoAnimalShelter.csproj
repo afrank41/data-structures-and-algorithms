@@ -5,4 +5,10 @@
     <TargetFramework>netcoreapp2.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Reference Include="StackQueue">
+      <HintPath>..\..\..\..\Data-Structures\stacksQueues\StackQueue\StackQueue\bin\Debug\netcoreapp2.1\StackQueue.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

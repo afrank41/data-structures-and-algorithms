@@ -5,7 +5,7 @@ using StackQueue.Classes;
 
 namespace FifoAnimalShelter.Classes
 {
-    class AnimalShelter
+    public class AnimalShelter
     {
         public Animal Front { get; set; }
         public Animal Rear { get; set; }
@@ -68,6 +68,10 @@ namespace FifoAnimalShelter.Classes
                 while (!(Front is Cat))
                 {
                     Enqueue(Dequeue());
+                    if(temp == Front)
+                    {
+                        return Dequeue();
+                    }
                 }
 
                 Animal cat = Dequeue();
@@ -85,6 +89,10 @@ namespace FifoAnimalShelter.Classes
                 while (!(Front is Dog))
                 {
                     Enqueue(Dequeue());
+                    if (temp == Front)
+                    {
+                        return Dequeue();
+                    }
                 }
 
                 Animal dog = Dequeue();

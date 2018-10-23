@@ -9,6 +9,8 @@ namespace FifoAnimalShelter.Classes
     {
         public Animal Next { get; set; }
 
+        public string Name { get; set; }
+
         public abstract string Type { get; set; }
     }
 }
