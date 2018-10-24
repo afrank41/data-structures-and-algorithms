@@ -8,6 +8,8 @@ namespace StackQueue.Classes
     {
         public Node Top { get; set; }
 
+        public int Count { get; set; }
+
         public Stack(Node node)
         {
             Top = node;
@@ -28,11 +30,19 @@ namespace StackQueue.Classes
         /// <returns>returns the node that was removed</returns>
         public Node Pop()
         {
-            Node temp = Top;
-            Top = Top.Next;
-            temp.Next = null;
+            if(Top == null)
+            {
+                return null;
+            }
+            else
+            {
+                Node temp = Top;
+                Top = Top.Next;
+                temp.Next = null;
 
-            return temp;
+                Count--;
+                return temp;
+            }
         }
 
         /// <summary>
@@ -43,6 +53,7 @@ namespace StackQueue.Classes
         {
             node.Next = Top;
             Top = node;
+            Count++;
         }
     }
 }
