@@ -23,20 +23,20 @@ namespace FifoAnimalShelter.Classes
         /// <returns>returns a success message if a dog or cat is enqueued</returns>
         public string Enqueue(Animal animal)
         {
-            string message = $"Not a cat or dog. You added a {animal.Type} to the shelter.";
+            string message = "You added a \"something\" to the shelter.";
 
             if(animal is Cat)
             {
                 Rear.Next = animal;
                 Rear = animal;
-                message = $"Added a {animal.Type} to the shelter!";
+                message = "Added a cat to the shelter!";
                 return message;
             }
             else if (animal is Dog)
             {
                 Rear.Next = animal;
                 Rear = animal;
-                message = $"Added a {animal.Type} to the shelter!";
+                message = "Added a dog to the shelter!";
                 return message;
             }
 
