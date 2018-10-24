@@ -13,3 +13,4 @@
 9. [EC Challenge: Check If Linked List Is Palindrome](Challenges/palindromeLinkedList)
 10. [Implementation: Stacks and Queues](Data-Structures/stacksQueues)
 11. [Challenge: Queue With Two Stacks](Challenges/queueWithStacks)
+12. [Challenge: FIFO Animal Shelter](Challenges/fifoAnimalShelter)

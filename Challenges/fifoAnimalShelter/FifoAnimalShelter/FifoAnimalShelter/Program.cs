@@ -25,6 +25,7 @@ namespace FifoAnimalShelter
             shelter.Enqueue(fish);
 
             Console.WriteLine(shelter.Dequeue("dog").Name);
+
             Console.WriteLine(shelter.Front.Name);
         }
     }

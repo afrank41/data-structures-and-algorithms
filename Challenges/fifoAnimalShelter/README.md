@@ -1,25 +1,25 @@
-# Queue With Stacks
+# FIFO Animal Shelter
 
 ## Challenge
-Create a new Queue class that has two properties that hold two stacks. The class needs an enqueue method that will add a new node to the queue and a dequeue method that will remove a node from the bottom of a stack. This class should effectively use the two stacks to create a qeueue.
+Create an AnimalShelter class that acts as a queue for animals. The class needs an enqueue method that will add a new Animal to the queue and a dequeue method that will remove an Animal from the rear of the animal shelter queue. An Animal class should also be created to serve as a Node to be placed in the AnimalShelter queue. OOP principals should be demonstrated by having derived classes from the Animal class.
 
 ## Approach & Efficiency
 
 Enqueue: <br>
 1. Big O Time = O(1)
-	- This method only needs to push a new node to the top of a stack
+	- This method only needs to add a new animal to the rear of the queue
 
 2. Big O Space = O(1)
-	- There isn't any additional memory that needs to be allocated to push a node to the top of a stack
+	- There isn't any additional memory that needs to be allocated to add a node to the rear
 
 Dequeue:<br>
 1. Big O Time = O(n)
-	- This method needs to iterate through each node in a stack to pop them off the stack and push them into an empty stack
+	- This method needs to iterate through the queue of animals and only dequeue specific animal types. It also needs to iterate through the queue again to ensure the queue order remains intact.
 
 2. Big O Space = O(1)
-	- There isn't any additional memory that needs to be allocated to pop and push nodes into a stack
+	- There isn't any additional memory that needs to be allocated to remove an animal from the queue
 
 ## Solution
 
-![Queue With Stacks](../../assets/Challenge11.jpg)
+![Queue With Stacks](../../assets/Challenge12.jpg)
 
