@@ -1,25 +1,16 @@
-# FIFO Animal Shelter
+# Matching Bracket Validation
 
 ## Challenge
-Create an AnimalShelter class that acts as a queue for animals. The class needs an enqueue method that will add a new Animal to the queue and a dequeue method that will remove an Animal from the rear of the animal shelter queue. An Animal class should also be created to serve as a Node to be placed in the AnimalShelter queue. OOP principals should be demonstrated by having derived classes from the Animal class.
+Create a method called MatchingBracketValidation that takes in a string and returns a boolean value. The method should return true if there are brackets in your input string that both open and close properly or if there is no brackets in the string at all. The method should return false otherwise. 
 
 ## Approach & Efficiency
+Big O Time = O(n))<br>
+	- This method needs to iterate the length of the input string to check if the use of brackets is valid
 
-Enqueue: <br>
-1. Big O Time = O(1)
-	- This method only needs to add a new animal to the rear of the queue
-
-2. Big O Space = O(1)
-	- There isn't any additional memory that needs to be allocated to add a node to the rear
-
-Dequeue:<br>
-1. Big O Time = O(n)
-	- This method needs to iterate through the queue of animals and only dequeue specific animal types. It also needs to iterate through the queue again to ensure the queue order remains intact.
-
-2. Big O Space = O(1)
-	- There isn't any additional memory that needs to be allocated to remove an animal from the queue
+Big O Space = O(n)<br>
+	- This method instantiates a new stack and nodes within it to keep track of open brackets within the input string
 
 ## Solution
 
-![Queue With Stacks](../../assets/Challenge12.jpg)
+![Queue With Stacks](../../assets/Challenge13.jpg)
 
