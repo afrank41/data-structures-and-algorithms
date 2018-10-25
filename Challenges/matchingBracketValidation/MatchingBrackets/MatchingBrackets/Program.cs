@@ -5,7 +5,7 @@ using System.Text.RegularExpressions;
 
 namespace MatchingBrackets
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -25,26 +25,31 @@ namespace MatchingBrackets
             Console.WriteLine($"Balanced Brackets: {MatchingBracketValidation("]][]")}\n");
         }
 
+        /// <summary>
+        /// Check if brackets are being opened and closed properly within a string
+        /// </summary>
+        /// <param name="input">string to be checked</param>
+        /// <returns>return true if brackets open and close properly</returns>
         public static bool MatchingBracketValidation(string input)
         {
             Stack stack = new Stack(null);
-            Regex open = new Regex(@"[(\[{]");
-            Regex letter = new Regex(@"[A-Za-z]");
+            Regex openRegex = new Regex(@"[(\[{]");
+            Regex symbolRegex = new Regex(@"[\w!?@#$%^&*-+=]");
 
             for (int i = 0; i < input.Length; i++)
             {
-                Match openMatch = open.Match(input[i].ToString());
-                Match letterMatch = letter.Match(input[i].ToString());
+                Match open = openRegex.Match(input[i].ToString());
+                Match symbol = symbolRegex.Match(input[i].ToString());
 
-                if (letterMatch.Success)
+                if (symbol.Success)
                 {
                     continue;
                 }
-                else if (stack.Count == 0 || openMatch.Success)
+                else if (stack.Count == 0 || open.Success)
                 {
                     stack.Push(new Node(input[i].ToString()));
                 }
-                else if (stack.Count > 0 && !(openMatch.Success))
+                else if (stack.Count > 0 && !(open.Success))
                 {
                     Node temp = stack.Pop();
                     switch (input[i].ToString())
@@ -58,13 +63,9 @@ namespace MatchingBrackets
                         case "}":
                             if (temp.Value.ToString() != "{") return false;
                             break;
-                        default:
-                            stack.Push(temp);
-                            break;
                     }
                 }
             }
-
             return stack.Top == null;
         }
     }
