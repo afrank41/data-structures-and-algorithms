@@ -1,36 +1,37 @@
-# Stacks and Queues
+# Tree
 
 ## Description/Challenge
-Implement a stack and a queue with functionality to Peek, Push, and Pop to a stack and to Peek, Enqueue, and Dequeue to a queue. The project should have a Node class with a Value and Next property. The project should also include a Stack class with a Top property with associated methods as well as a Queue class that has both a Front and Rear property with associated methods.
+Implement a binary tree and a binary search tree. The binary tree should have a preorder, inorder, and postorder method that each return a list of the nodes in the tree in their respective orders. The binary search tree should have a search tree that can perform a binary search for an exisiting node adn then return that node. The binary search tree should also have an add method that adds a node in the correct spot inside the ordered tree.
 
 ## Linked List Methods
-### Stack
+### Binary Tree
 Big O -<br>
-Time: O(1)<br>
+Time: O(h)<br>
 Space: O(1)<br>
 
-1. Peek()
-    * This method looks at the top node in a stack and returns it
+1. PreOrder()
+    * This method returns a list of the nodes in a tree ordered like ROOT -> LEFT -> RIGHT
+    * The time this takes depends on the height of the tree determined by the amount of edges it has
 
-2. Push()
-    * This methods add a new node to the top of a stack
+2. InOrder()
+    * This method returns a list of the nodes in a tree ordered like LEFT -> ROOT -> RIGHT
+    * The time this takes depends on the height of the tree determined by the amount of edges it has
 
-3. Pop()
-    * This method removed the top node in a stack and returns it
+3. PostOrder()
+    * This method returns a list of the nodes in a tree ordered like LEFT -> RIGHT -> ROOT
+    * The time this takes depends on the height of the tree determined by the amount of edges it has
 
-### Queue
+### 
 Big O -<br>
-Time: O(1)<br>
+Time: O(log n)<br>
 Space: O(1)<br>
 
-1. Peek()
-    * This method looks at the front node in a queue and returns it
+1. Search()
+    * This method searches for a specific node in a binary search tree. This method will never have to search more than half of a tree's nodes
 
-2. Enqueue()
-    * This method adds a new node to the rear of a queue
+2. Add()
+    * This method adds a new node to the correct place in a binary search tree. This method will never have to search more than half of a tree's nodes to add.
 
-3. Dequeue()
-    * This method removed the front node in a queue and returns it
-
-## Visual Example Stack and Queue Ordering
-![Stack and Queue Order](assets/stackQueueVisual.PNG)
+## Visual Example Of Binary Tree Traversal
+### Depth First Traversals
+![](assets/depth.PNG)

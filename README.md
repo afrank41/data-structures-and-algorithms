@@ -15,3 +15,4 @@
 11. [Challenge: Queue With Two Stacks](Challenges/queueWithStacks)
 12. [Challenge: FIFO Animal Shelter](Challenges/fifoAnimalShelter)
 13. [Challenge: Matching Bracket Validation](Challenges/matchingBracketValidation)
+14. [Implementation: Tree](Data-Structures/tree)
