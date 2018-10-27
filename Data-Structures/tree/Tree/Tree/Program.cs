@@ -8,22 +8,23 @@ namespace Tree
     {
         static void Main(string[] args)
         {
-            Node node6 = new Node(60, null, null);
-            Node node5 = new Node(50, null, null);
-            Node node4 = new Node(40, null, null);
-            Node node3 = new Node(30, null, null);
-            Node node2 = new Node(20, node5, node6);
-            Node node1 = new Node(10, node3, node4);
-            Node root = new Node(0, node1, node2);
+            Node node6 = new Node(350, null, null);
+            Node node5 = new Node(250, null, null);
+            Node node4 = new Node(150, null, null);
+            Node node3 = new Node(50, null, null);
+            Node node2 = new Node(300, node5, node6);
+            Node node1 = new Node(100, node3, node4);
+            Node root = new Node(200, node1, node2);
             BinaryTree tree = new BinaryTree(root);
 
+            Console.WriteLine("BINARY TREE");
             Console.WriteLine("Preorder:");
             List<Node> preorder = tree.PreOrder(root);
             foreach(Node item in preorder)
             {
                 Console.WriteLine(item.Value);
             }
-            preorder.RemoveAll(item => item is Node);
+            preorder.Clear();
 
             Console.WriteLine("\nInorder:");
             List<Node> inorder = tree.InOrder(root);
@@ -31,7 +32,7 @@ namespace Tree
             {
                 Console.WriteLine(item.Value);
             }
-            inorder.RemoveAll(item => item is Node);
+            inorder.Clear();
 
             Console.WriteLine("\nPostorder:");
             List<Node> postorder = tree.PostOrder(root);
@@ -39,7 +40,19 @@ namespace Tree
             {
                 Console.WriteLine(item.Value);
             }
-            postorder.RemoveAll(item => item is Node);
+            postorder.Clear();
+
+            Console.WriteLine("\n========================");
+
+            BinarySearchTree binaryTree = new BinarySearchTree(root);
+            Node newNode = new Node(80, null, null);
+
+            Console.WriteLine("BINARY SEARCH TREE");
+            Console.WriteLine("Searching for 100...");
+            Console.WriteLine($"Found: {binaryTree.Search(root, 100).Value}");
+
+            Console.WriteLine("\nSearching for 75...");
+            Console.WriteLine($"Found: {binaryTree.Search(root, 75).Value}");
         }
     }
 }
