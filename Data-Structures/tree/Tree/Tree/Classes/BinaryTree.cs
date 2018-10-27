@@ -14,6 +14,14 @@ namespace Tree.Classes
         }
 
         List<Node> preOrderlist = new List<Node>();
+        List<Node> inOrderlist = new List<Node>();
+        List<Node> postOrderlist = new List<Node>();
+
+        /// <summary>
+        /// Traverse a binary tree a return a list of nodes that are in the order of root, left, right
+        /// </summary>
+        /// <param name="root">root of the binary tree being traversed</param>
+        /// <returns>returns the ordered list of nodes</returns>
         public List<Node> PreOrder(Node root)
         {
             preOrderlist.Add(root);
@@ -29,6 +37,52 @@ namespace Tree.Classes
             }
 
             return preOrderlist;
+        }
+
+        /// <summary>
+        /// Traverse a binary tree a return a list of nodes that are in the order of left, root, right
+        /// </summary>
+        /// <param name="root">root of the binary tree being traversed</param>
+        /// <returns>returns the ordered list of nodes</returns>
+        public List<Node> InOrder(Node root)
+        {
+
+            if (root.Left != null)
+            {
+                InOrder(root.Left);
+            }
+
+            inOrderlist.Add(root);
+
+            if (root.Right != null)
+            {
+                InOrder(root.Right);
+            }
+
+            return inOrderlist;
+        }
+
+        /// <summary>
+        /// Traverse a binary tree a return a list of nodes that are in the order of left, right, root
+        /// </summary>
+        /// <param name="root">root of the binary tree being traversed</param>
+        /// <returns>returns the ordered list of nodes</returns>
+        public List<Node> PostOrder(Node root)
+        {
+
+            if (root.Left != null)
+            {
+                PostOrder(root.Left);
+            }
+
+            if (root.Right != null)
+            {
+                PostOrder(root.Right);
+            }
+
+            postOrderlist.Add(root);
+
+            return postOrderlist;
         }
     }
 }

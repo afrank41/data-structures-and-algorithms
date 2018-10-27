@@ -17,13 +17,29 @@ namespace Tree
             Node root = new Node(0, node1, node2);
             BinaryTree tree = new BinaryTree(root);
 
-            List<Node> pre = tree.PreOrder(root);
-
-            foreach(Node item in pre)
+            Console.WriteLine("Preorder:");
+            List<Node> preorder = tree.PreOrder(root);
+            foreach(Node item in preorder)
             {
                 Console.WriteLine(item.Value);
             }
-            pre.RemoveAll(item => item is Node);
+            preorder.RemoveAll(item => item is Node);
+
+            Console.WriteLine("\nInorder:");
+            List<Node> inorder = tree.InOrder(root);
+            foreach(Node item in inorder)
+            {
+                Console.WriteLine(item.Value);
+            }
+            inorder.RemoveAll(item => item is Node);
+
+            Console.WriteLine("\nPostorder:");
+            List<Node> postorder = tree.PostOrder(root);
+            foreach(Node item in postorder)
+            {
+                Console.WriteLine(item.Value);
+            }
+            postorder.RemoveAll(item => item is Node);
         }
     }
 }
