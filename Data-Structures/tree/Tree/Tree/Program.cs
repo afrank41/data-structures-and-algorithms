@@ -52,8 +52,6 @@ namespace Tree
             Node root2 = new Node(200, node7, node8);
             BinarySearchTree binaryTree = new BinarySearchTree(root2);
 
-            Node newNode = new Node(25, null, null);
-
             Console.WriteLine("BINARY SEARCH TREE");
             Console.WriteLine("Searching for 100...");
             Console.WriteLine($"Found: {binaryTree.Search(root2, 100).Value}");
