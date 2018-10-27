@@ -12,9 +12,11 @@ namespace Tree.Classes
 
         public Node Right { get; set; }
 
-        public Node(int value)
+        public Node(int value, Node left, Node right)
         {
             Value = value;
+            Left = left;
+            Right = right;
         }
     }
 }
