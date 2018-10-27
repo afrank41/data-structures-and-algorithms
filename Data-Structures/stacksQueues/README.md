@@ -3,7 +3,7 @@
 ## Description/Challenge
 Implement a stack and a queue with functionality to Peek, Push, and Pop to a stack and to Peek, Enqueue, and Dequeue to a queue. The project should have a Node class with a Value and Next property. The project should also include a Stack class with a Top property with associated methods as well as a Queue class that has both a Front and Rear property with associated methods.
 
-## Linked List Methods
+## Stacks and Queues Methods
 ### Stack
 Big O -<br>
 Time: O(1)<br>
