@@ -19,6 +19,11 @@ namespace FizzBuzz
             FizzBuzzTree(root);
         }
 
+        /// <summary>
+        /// Traverses a tree and judges if node value fizz, buzz, or fizzbuzz
+        /// </summary>
+        /// <param name="root">root node of binary tree to be traversed</param>
+        /// <returns>eturns a list of fizzbuzz strings</returns>
         public static List<string> FizzBuzzTree(Node root)
         {
             List<string> list = new List<string>();

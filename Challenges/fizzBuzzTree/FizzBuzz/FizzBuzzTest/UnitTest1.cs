@@ -7,6 +7,10 @@ namespace FizzBuzzTest
 {
     public class UnitTest1
     {
+        /// <summary>
+        /// Tests to make sure Fizz is being added to a list properly
+        /// </summary>
+        /// <param name="index">index of list item to check</param>
         [Theory]
         [InlineData(0)]
         [InlineData(1)]
@@ -20,6 +24,10 @@ namespace FizzBuzzTest
             Assert.Equal("Fizz", FizzBuzzTree(root)[index]);
         }
 
+        /// <summary>
+        /// Tests to make sure Buzz is being added to a list properly
+        /// </summary>
+        /// <param name="index">index of list item to check</param>
         [Theory]
         [InlineData(0)]
         [InlineData(1)]
@@ -33,6 +41,10 @@ namespace FizzBuzzTest
             Assert.Equal("Buzz", FizzBuzzTree(root)[index]);
         }
 
+        /// <summary>
+        /// Tests to make sure FizzBuzz is being added to a list properly
+        /// </summary>
+        /// <param name="index">index of list item to check</param>
         [Theory]
         [InlineData(0)]
         [InlineData(1)]
