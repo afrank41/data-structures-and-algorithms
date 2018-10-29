@@ -1,4 +1,4 @@
-# Matching Bracket Validation
+# FizzBuzz Tree
 
 ## Challenge
 Create a method called FizzBuzzTree that takes in a root node from a binary tree and returns a list of strings full of FizzBuzzes. If the node's value is divisible by 5 and 3 add "FizzBuzz" to the list, if it is divisible 3 add "Fizz", if it is divisible by 5 add "Buzz".
