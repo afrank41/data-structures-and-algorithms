@@ -16,6 +16,7 @@ namespace FizzBuzz
             Node node1 = new Node(3, node3, node4);
             Node root = new Node(15, node1, node2);
 
+            Console.WriteLine("FizzBuzz Test:");
             FizzBuzzTree(root);
         }
 

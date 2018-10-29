@@ -1,16 +1,15 @@
 # Matching Bracket Validation
 
 ## Challenge
-Create a method called MatchingBracketValidation that takes in a string and returns a boolean value. The method should return true if there are brackets in your input string that both open and close properly or if there is no brackets in the string at all. The method should return false otherwise. 
+Create a method called FizzBuzzTree that takes in a root node from a binary tree and returns a list of strings full of FizzBuzzes. If the node's value is divisible by 5 and 3 add "FizzBuzz" to the list, if it is divisible 3 add "Fizz", if it is divisible by 5 add "Buzz".
 
 ## Approach & Efficiency
 Big O Time = O(n)<br>
-	- This method needs to iterate the length of the input string to check if the use of brackets is valid
+	- This method needs to hit every node within a binary tree to check values and add the string to a list.
 
-Big O Space = O(n)<br>
-	- This method instantiates a new stack and nodes within it to keep track of open brackets within the input string
+Big O Space = O(h)<br>
+	- This method utilizes a preorder binary tree method that traverses our binary tree recursively for the height of the tree.
 
 ## Solution
 
-![Queue With Stacks](../../assets/Challenge13.jpg)
-
+![FizzBuzz Tree Output](../../assets/Challenge16.jpg)
