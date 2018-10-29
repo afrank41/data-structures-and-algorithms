@@ -16,3 +16,4 @@
 12. [Challenge: FIFO Animal Shelter](Challenges/fifoAnimalShelter)
 13. [Challenge: Matching Bracket Validation](Challenges/matchingBracketValidation)
 14. [Implementation: Tree](Data-Structures/tree)
+15. [Challenge: FizzBuzz Tree](Challenges/fizzBuzzTree)
