@@ -4,7 +4,7 @@ using Tree.Classes;
 
 namespace FizzBuzz
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -19,7 +19,7 @@ namespace FizzBuzz
             FizzBuzzTree(root);
         }
 
-        static List<string> FizzBuzzTree(Node root)
+        public static List<string> FizzBuzzTree(Node root)
         {
             List<string> list = new List<string>();
             BinaryTree tree = new BinaryTree(root);
