@@ -16,6 +16,7 @@ namespace BreadthFirstTraversal
             Node node1 = new Node(1, node3, node4);
             Node root = new Node(0, node1, node2);
 
+            Console.WriteLine("Breadth First Traversal:");
             BreadthFirst(root);
         }
 
