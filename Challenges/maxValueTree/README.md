@@ -1,4 +1,4 @@
-# Breadth First Traversal
+# Max Value In A Tree
 
 ## Challenge
 Create a method called MaxValue that takes in a binary tree as input and outputs the max value in that tree. 
@@ -12,4 +12,4 @@ Big O Space = O(h)<br>
 
 ## Solution
 
-![Breadth First Output](../../assets/Challenge18.jpg)
+![Max Value](../../assets/Challenge18.jpg)
