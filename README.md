@@ -18,3 +18,4 @@
 14. [Implementation: Tree](Data-Structures/tree)
 15. [Challenge: FizzBuzz Tree](Challenges/fizzBuzzTree)
 16. [Challenge: Breadth First Traversal](Challenges/breadthFirst)
+17. [Challenge: Max Value In Tree](Challenges/maxValueTree)
