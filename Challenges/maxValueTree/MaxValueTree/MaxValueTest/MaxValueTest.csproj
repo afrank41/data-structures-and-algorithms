@@ -13,6 +13,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\MaxValueTree\MaxValueTree.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Reference Include="Tree">
       <HintPath>..\..\..\..\Data-Structures\tree\Tree\Tree\bin\Debug\netcoreapp2.1\Tree.dll</HintPath>
     </Reference>

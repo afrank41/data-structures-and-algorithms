@@ -3,7 +3,7 @@ using Tree.Classes;
 
 namespace MaxValueTree
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -20,7 +20,7 @@ namespace MaxValueTree
             Console.WriteLine(MaxValue(tree));
         }
 
-        static int MaxValue(BinaryTree tree)
+        public static int MaxValue(BinaryTree tree)
         {
             int max = 0;
 
