@@ -8,6 +8,9 @@ namespace TreeIntersectionTest
 {
     public class UnitTest1
     {
+        /// <summary>
+        /// Determines whether this instance [can return matches].
+        /// </summary>
         [Fact]
         public void CanReturnMatches()
         {
@@ -34,6 +37,9 @@ namespace TreeIntersectionTest
             Assert.Equal(list, TreeIntersection(tree1, tree2));
         }
 
+        /// <summary>
+        /// Determines whether this instance [can return no matches].
+        /// </summary>
         [Fact]
         public void CanReturnNoMatches()
         {
@@ -58,6 +64,9 @@ namespace TreeIntersectionTest
             Assert.Empty(TreeIntersection(tree1, tree2));
         }
 
+        /// <summary>
+        /// Determines whether this instance [can return matches with different size trees].
+        /// </summary>
         [Fact]
         public void CanReturnMatchesWithDifferentSizeTrees()
         {

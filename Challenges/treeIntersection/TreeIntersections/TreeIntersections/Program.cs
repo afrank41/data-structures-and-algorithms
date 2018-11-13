@@ -33,6 +33,12 @@ namespace TreeIntersections
             }
         }
 
+        /// <summary>
+        /// Checks two binary trees and returns a list of any same values between them
+        /// </summary>
+        /// <param name="bt1">the first binary tree</param>
+        /// <param name="bt2">the second binary tree</param>
+        /// <returns>a list of same values from the two trees</returns>
         static public List<int> TreeIntersection(BinaryTree bt1, BinaryTree bt2)
         {
             List<int> result = new List<int>();
