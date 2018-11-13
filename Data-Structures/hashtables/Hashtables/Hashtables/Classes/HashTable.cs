@@ -9,6 +9,11 @@ namespace Hashtables.Classes
     {
         LinkdList[] table = new LinkdList[1024];
 
+        /// <summary>
+        /// Gets the hash for the given key
+        /// </summary>
+        /// <param name="key">The key</param>
+        /// <returns></returns>
         public int GetHash(string key)
         {
             int hashIndex = 0;
@@ -23,6 +28,11 @@ namespace Hashtables.Classes
             return hashIndex;
         }
 
+        /// <summary>
+        /// Adds the specified key.
+        /// </summary>
+        /// <param name="key">The key</param>
+        /// <param name="value">The value</param>
         public void Add(string key, object value)
         {
             int index = GetHash(key);
@@ -39,17 +49,31 @@ namespace Hashtables.Classes
             }
         }
 
+        /// <summary>
+        /// Finds the specified key value pair in a hash table
+        /// </summary>
+        /// <param name="key">The key</param>
+        /// <returns>the value of the key value pair searched for</returns>
         public object Find(string key)
         {
             int index = GetHash(key);
-            LinkdList list = table[index];
 
-            if (list.Head.Key.ToString() == key) return list.Head.Value;
-            else if (list.Head.Next != null)
+            if (table[index] == null)
             {
-                while (list.Current.Next != null)
+                return "Not Found";
+            }
+            else if (table[index].Head.Key.ToString() == key)
+            {
+                return table[index].Head.Value;
+            }
+            else if (table[index].Head.Next != null)
+            {
+                while (table[index].Current.Next != null)
                 {
-                    if (list.Current.Key.ToString() == key) return list.Current.Value;
+                    if (table[index].Current.Key.ToString() == key)
+                    {
+                        return table[index].Current.Value;
+                    }
                 }
             }
 

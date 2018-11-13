@@ -12,7 +12,7 @@ namespace Hashtables
             table.Add("dog", "dog");
             table.Add("bird", "bird");
 
-            Console.WriteLine(table.Find("dog"));
+            Console.WriteLine(table.Find("puppy"));
         }
     }
 }
