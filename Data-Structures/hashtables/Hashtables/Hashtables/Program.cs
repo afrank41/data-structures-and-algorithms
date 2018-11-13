@@ -12,7 +12,8 @@ namespace Hashtables
             table.Add("dog", "dog");
             table.Add("bird", "bird");
 
-            Console.WriteLine(table.Find("puppy"));
+            Console.WriteLine(table.Contains("dog"));
+            Console.WriteLine(table.Contains("puppy"));
         }
     }
 }

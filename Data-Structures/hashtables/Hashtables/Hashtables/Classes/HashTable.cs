@@ -79,5 +79,15 @@ namespace Hashtables.Classes
 
             return "Not Found";
         }
+
+        public bool Contains(string key)
+        {
+            if (Find(key).ToString() == "Not Found")
+            {
+                return false;
+            }
+
+            return true;
+        }
     }
 }
