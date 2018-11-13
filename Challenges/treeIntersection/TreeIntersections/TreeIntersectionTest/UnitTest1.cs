@@ -6,7 +6,19 @@ namespace TreeIntersectionTest
     public class UnitTest1
     {
         [Fact]
-        public void Test1()
+        public void CanReturnMatches()
+        {
+
+        }
+
+        [Fact]
+        public void CanReturnNoMatches()
+        {
+
+        }
+
+        [Fact]
+        public void CanReturnMatchesWithDifferentSizeTrees()
         {
 
         }
