@@ -20,3 +20,4 @@
 16. [Challenge: Breadth First Traversal](Challenges/breadthFirst)
 17. [Challenge: Max Value In Tree](Challenges/maxValueTree)
 18. [Implementation: Hash Table](Data-Structures/hashtables)
+19. [Challenge: Tree Intersection](Challenges/treeIntersection)
