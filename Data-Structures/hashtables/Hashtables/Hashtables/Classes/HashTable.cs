@@ -68,12 +68,14 @@ namespace Hashtables.Classes
             }
             else if (table[index].Head.Next != null)
             {
-                while (table[index].Current.Next != null)
+                while (table[index].Current != null)
                 {
                     if (table[index].Current.Key.ToString() == key)
                     {
                         return table[index].Current.Value;
                     }
+
+                    table[index].Current = table[index].Current.Next;
                 }
             }
 
