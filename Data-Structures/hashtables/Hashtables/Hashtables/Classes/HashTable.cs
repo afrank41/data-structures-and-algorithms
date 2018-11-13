@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Hashtables.Classes
 {
-    class HashTable
+    public class HashTable
     {
         LinkdList[] table = new LinkdList[1024];
 
@@ -80,6 +80,11 @@ namespace Hashtables.Classes
             return "Not Found";
         }
 
+        /// <summary>
+        /// Determines whether hash table contains the searched for key
+        /// </summary>
+        /// <param name="key">The key</param>
+        /// <returns> true if hash table contains the key searched for</returns>
         public bool Contains(string key)
         {
             if (Find(key).ToString() == "Not Found")
