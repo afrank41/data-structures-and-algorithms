@@ -1,37 +1,21 @@
-# Tree
+# Hash Table
 
 ## Description/Challenge
-Implement a binary tree and a binary search tree. The binary tree should have a preorder, inorder, and postorder method that each return a list of the nodes in the tree in their respective orders. The binary search tree should have a search tree that can perform a binary search for an exisiting node adn then return that node. The binary search tree should also have an add method that adds a node in the correct spot inside the ordered tree.
+Implement a hash table . The hash table should have a GetHash, Add, Find, and Contains method. The GetHash method will take in a key and hash it to return the index a new node will be placed in your hash table. The Add method will add a new node to the hash table utilizing the GetHash method. The Find method will search the hash table and return a value associated with the input key. The Contains table will utilize the Find method to return a boolean whether or not a key was found inside the hash table.
 
-## Binary Tree Methods
-### Binary Tree
-Big O -<br>
-Time: O(h)<br>
-Space: O(1)<br>
+## Hash Table Methods
 
-1. PreOrder()
-    * This method returns a list of the nodes in a tree ordered like ROOT -> LEFT -> RIGHT
-    * The time this takes depends on the height of the tree determined by the amount of edges it has
+1. GetHash(string key)
+    * This method hashes the given key and returns the hash divided by the size of the hash table to return an index of that table.
 
-2. InOrder()
-    * This method returns a list of the nodes in a tree ordered like LEFT -> ROOT -> RIGHT
-    * The time this takes depends on the height of the tree determined by the amount of edges it has
+2. Add(string key, object value)
+    * This method adds a new node to the hash table at the hashed index of the key given.
 
-3. PostOrder()
-    * This method returns a list of the nodes in a tree ordered like LEFT -> RIGHT -> ROOT
-    * The time this takes depends on the height of the tree determined by the amount of edges it has
+3. Find(string key)
+    * This method searches a hash table for the given key and returns the value associated with that key.
 
-### Binary Search Tree
-Big O -<br>
-Time: O(log n)<br>
-Space: O(1)<br>
+4. Contains(string key)
+    * This method utilizes the find method. If the key is found it will return true, otherwise if the key is not found it returns false.
 
-1. Search()
-    * This method searches for a specific node in a binary search tree. This method will never have to search more than half of a tree's nodes
-
-2. Add()
-    * This method adds a new node to the correct place in a binary search tree. This method will never have to search more than half of a tree's nodes to add.
-
-## Visual Example Of Binary Tree Traversal
-### Depth First Traversals
-![](assets/depth.PNG)
+## Visual Example Of Hash Table Methods
+![](assets/hashTable.PNG)
