@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Hashtables.Classes;
+using System;
 
 namespace Hashtables
 {
@@ -6,7 +7,12 @@ namespace Hashtables
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            HashTable table = new HashTable();
+            table.Add("cat", "cat");
+            table.Add("dog", "dog");
+            table.Add("bird", "bird");
+
+            Console.WriteLine(table.Find("dog"));
         }
     }
 }

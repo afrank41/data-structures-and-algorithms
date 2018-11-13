@@ -12,10 +12,10 @@ namespace LinkedListTest
         [InlineData(true)]
         public void LLCanAdd(object value)
         {
-            Node node1 = new Node(7);
-            Node node2 = new Node("cat");
-            Node node3 = new Node("dog");
-            Node node4 = new Node(value);
+            Node node1 = new Node(0, 7);
+            Node node2 = new Node(0, "cat");
+            Node node3 = new Node(0, "dog");
+            Node node4 = new Node(0, value);
 
             LinkdList list = new LinkdList(node1);
             list.Append(node2);
@@ -31,10 +31,10 @@ namespace LinkedListTest
         [InlineData(true)]
         public void LLCanAppend(object value)
         {
-            Node node1 = new Node(7);
-            Node node2 = new Node("cat");
-            Node node3 = new Node("dog");
-            Node node4 = new Node(value);
+            Node node1 = new Node(0, 7);
+            Node node2 = new Node(0, "cat");
+            Node node3 = new Node(0, "dog");
+            Node node4 = new Node(0, value);
 
             LinkdList list = new LinkdList(node1);
             list.Append(node2);
@@ -50,10 +50,10 @@ namespace LinkedListTest
         [InlineData(true)]
         public void LLCanAddBefore(object value)
         {
-            Node node1 = new Node(7);
-            Node node2 = new Node("cat");
-            Node node3 = new Node("dog");
-            Node node4 = new Node(value);
+            Node node1 = new Node(0, 7);
+            Node node2 = new Node(0, "cat");
+            Node node3 = new Node(0, "dog");
+            Node node4 = new Node(0, value);
 
             LinkdList list = new LinkdList(node1);
             list.Append(node2);
@@ -69,10 +69,10 @@ namespace LinkedListTest
         [InlineData(true)]
         public void LLCanAddAfter(object value)
         {
-            Node node1 = new Node(7);
-            Node node2 = new Node("cat");
-            Node node3 = new Node("dog");
-            Node node4 = new Node(value);
+            Node node1 = new Node(0, 7);
+            Node node2 = new Node(0, "cat");
+            Node node3 = new Node(0, "dog");
+            Node node4 = new Node(0, value);
 
             LinkdList list = new LinkdList(node1);
             list.Append(node2);
@@ -88,10 +88,10 @@ namespace LinkedListTest
         [InlineData(true)]
         public void LLCanFind(object value)
         {
-            Node node1 = new Node(7);
-            Node node2 = new Node("cat");
-            Node node3 = new Node("dog");
-            Node node4 = new Node(value);
+            Node node1 = new Node(0, 7);
+            Node node2 = new Node(0, "cat");
+            Node node3 = new Node(0, "dog");
+            Node node4 = new Node(0, value);
 
             LinkdList list = new LinkdList(node1);
             list.Append(node2);
