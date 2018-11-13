@@ -9,11 +9,11 @@ namespace LinkedLists
         {
             Console.WriteLine("Hello World!\n");
 
-            Node node1 = new Node(7);
-            Node node2 = new Node("cat");
-            Node node3 = new Node("dog");
-            Node node4 = new Node(14);
-            Node node5 = new Node("bird");
+            Node node1 = new Node(0, 7);
+            Node node2 = new Node(0, "cat");
+            Node node3 = new Node(0, "dog");
+            Node node4 = new Node(0, 14);
+            Node node5 = new Node(0, "bird");
 
             LinkdList list = new LinkdList(node1);
             list.Add(node2);
