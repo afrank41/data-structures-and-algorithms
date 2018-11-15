@@ -17,6 +17,11 @@ namespace RepeatWord
             Console.WriteLine($"First word repeated: {RepeatedWord(s2)}");
         }
 
+        /// <summary>
+        /// Checks for first repeated word in a long string
+        /// </summary>
+        /// <param name="input">The input string</param>
+        /// <returns>returns the first repeated word</returns>
         public static string RepeatedWord(string input)
         {
             string[] temp = input.ToLower().Split(" ");
@@ -34,7 +39,7 @@ namespace RepeatWord
                 }
             }
 
-            return "No Repeated Word";
+            return "No Repeated Words";
         }
     }
 }
