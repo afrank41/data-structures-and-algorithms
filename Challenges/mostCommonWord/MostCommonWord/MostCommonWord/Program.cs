@@ -7,13 +7,18 @@ namespace MostCommonWord
     {
         static void Main(string[] args)
         {
-            string input = "no repeated words here sir";
+            string input = "Taco cat ate a taco";
             Console.WriteLine($"Input string: {input}\n");
 
-            Console.WriteLine($"Most common word: {MostCommonWord(input)}");
+            Console.WriteLine($"Most common word: {MostRepeatedWord(input)}");
         }
 
-        public static string MostCommonWord(string input)
+        /// <summary>
+        /// Finds the most common word in a long string
+        /// </summary>
+        /// <param name="input">the input string</param>
+        /// <returns>the most repeated word from the input string</returns>
+        public static string MostRepeatedWord(string input)
         {
             string[] words = input.ToLower().Split(" ");
             HashTable ht = new HashTable();
