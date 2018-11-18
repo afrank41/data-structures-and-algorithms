@@ -7,7 +7,7 @@ namespace Hashtables.Classes
 {
     public class HashTable
     {
-        LinkdList[] table = new LinkdList[1024];
+        public LinkdList[] Table { get; set; } = new LinkdList[1024];
 
         /// <summary>
         /// Gets the hash for the given key
@@ -38,14 +38,14 @@ namespace Hashtables.Classes
             int index = GetHash(key);
             Node node = new Node(key, value);
 
-            if (table[index] == null)
+            if (Table[index] == null)
             {
                 LinkdList list = new LinkdList(node);
-                table[index] = list;
+                Table[index] = list;
             }
             else
             {
-                table[index].Append(node);
+                Table[index].Append(node);
             }
         }
 
@@ -58,24 +58,24 @@ namespace Hashtables.Classes
         {
             int index = GetHash(key);
 
-            if (table[index] == null)
+            if (Table[index] == null)
             {
                 return "Not Found";
             }
-            else if (table[index].Head.Key.ToString() == key)
+            else if (Table[index].Head.Key.ToString() == key)
             {
-                return table[index].Head.Value;
+                return Table[index].Head.Value;
             }
-            else if (table[index].Head.Next != null)
+            else if (Table[index].Head.Next != null)
             {
-                while (table[index].Current != null)
+                while (Table[index].Current != null)
                 {
-                    if (table[index].Current.Key.ToString() == key)
+                    if (Table[index].Current.Key.ToString() == key)
                     {
-                        return table[index].Current.Value;
+                        return Table[index].Current.Value;
                     }
 
-                    table[index].Current = table[index].Current.Next;
+                    Table[index].Current = Table[index].Current.Next;
                 }
             }
 
