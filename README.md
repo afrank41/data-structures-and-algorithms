@@ -21,5 +21,5 @@
 17. [Challenge: Max Value In Tree](Challenges/maxValueTree)
 18. [Implementation: Hash Table](Data-Structures/hashtables)
 19. [Challenge: Tree Intersection](Challenges/treeIntersection)
-19. [Challenge: Repeated Word](Challenges/repeatedWord)
-20. [EC Challenge: Most Common Word](Challenges/mostCommonWord)
+20. [Challenge: Repeated Word](Challenges/repeatedWord)
+21. [EC Challenge: Most Common Word](Challenges/mostCommonWord)
