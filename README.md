@@ -22,3 +22,4 @@
 18. [Implementation: Hash Table](Data-Structures/hashtables)
 19. [Challenge: Tree Intersection](Challenges/treeIntersection)
 19. [Challenge: Repeated Word](Challenges/repeatedWord)
+20. [EC Challenge: Most Common Word](Challenges/mostCommonWord)
