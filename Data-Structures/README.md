@@ -8,13 +8,13 @@ Contained here is an accumulation of different Data Structure and Algorithm impl
 
 1.[Stacks & Queues](stacksQueues)
 
-1.[Trees]()
+1.[Trees](tree)
 
 1.[Graphs]()
 
-1.[Hash Tables]()
+1.[Hash Tables](hastables)
 
-1.[Selection Sort]()
+1.[Sorting Algorithms](sortingAlgorithms)
 
 1.[Quick Sort]()
 

@@ -23,3 +23,4 @@
 19. [Challenge: Tree Intersection](Challenges/treeIntersection)
 20. [Challenge: Repeated Word](Challenges/repeatedWord)
 21. [EC Challenge: Most Common Word](Challenges/mostCommonWord)
+22. [Implementation: Sorting Algorithms](Data-Structures/sortingAlgorithms)
