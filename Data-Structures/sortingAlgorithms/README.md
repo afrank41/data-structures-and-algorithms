@@ -1,0 +1,10 @@
+# Sorting Algorithms
+
+## Description/Challenge
+Implement an insertion sort, quick sort, and merge sort.
+
+## Sorting Algorithms Big O
+
+1. Insertion Sort:
+    * Time: O(n^2)
+    * Space: O(1)
