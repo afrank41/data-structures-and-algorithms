@@ -8,3 +8,7 @@ Implement an insertion sort, quick sort, and merge sort.
 1. Insertion Sort:
     * Time: O(n^2)
     * Space: O(1)
+
+2. Quick Sort:
+    * Time: O(n^2)
+    * Space: O(h)
