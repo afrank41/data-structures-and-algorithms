@@ -32,6 +32,16 @@ namespace SortingAlgorithms
                 Console.Write($"{num} ");
             }
             Console.WriteLine("\n");
+
+            int[] mergeArray = new int[] { 8, 3, 5, 6, 2, 1, 4, 9, 0 };
+            MergeSort(mergeArray);
+
+            Console.WriteLine("Merge sorted array: ");
+            foreach (int num in mergeArray)
+            {
+                Console.Write($"{num} ");
+            }
+            Console.WriteLine("\n");
         }
 
         /// <summary>
@@ -111,6 +121,69 @@ namespace SortingAlgorithms
             temp = arr[i];
             arr[i] = arr[low];
             arr[low] = temp;
+        }
+
+
+        /// <summary>
+        /// Sort an array using a merge sort algorithm
+        /// </summary>
+        /// <param name="arr">the input array</param>
+        public static void MergeSort(int[] arr)
+        {
+            if (arr.Length > 1)
+            {
+                int leftSize = arr.Length / 2;
+                int rightSize = arr.Length - leftSize;
+
+                int[] left = new int[leftSize];
+                Array.Copy(arr, 0, left, 0, leftSize);
+
+                int[] right = new int[rightSize];
+                Array.Copy(arr, arr.Length / 2, right, 0, rightSize);
+
+                MergeSort(left);
+                MergeSort(right);
+                Merge(left, right, arr);
+            }
+        }
+
+        /// <summary>
+        /// Merges two arrays into a main array
+        /// </summary>
+        /// <param name="left">The left array</param>
+        /// <param name="right">The right array</param>
+        /// <param name="arr">The main array created from the left and right arrays</param>
+        /// <returns>Returns a sorted array</returns>
+        public static int[] Merge(int[] left, int[] right, int[] arr)
+        {
+            int i = 0;
+            int j = 0;
+            int k = 0;
+
+            while (i < left.Length && j < right.Length)
+            {
+                if (left[i] <= right[j])
+                {
+                    arr[k] = left[i++];
+                }
+                else
+                {
+                    arr[k] = right[j++];
+                }
+
+                k++;
+            }
+
+            if (i == left.Length)
+            {
+                Array.Copy(right, j, arr, k, right.Length - j);
+            }
+            else
+            {
+                Array.Copy(left, i, arr, k, left.Length - i);
+            }
+
+            return arr;
         }
     }
 }
