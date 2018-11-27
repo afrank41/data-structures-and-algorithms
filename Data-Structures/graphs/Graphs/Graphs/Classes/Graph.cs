@@ -13,18 +13,46 @@ namespace Graphs.Classes
             AdjacenyList = new LinkedList<LinkedList<Tuple<Node, int>>>();
         }
 
-        public void AddEdge(Node parent, Tuple<Node, int> child)
+        public void AddEdge(LinkedList<Tuple<Node, int>> parent, Tuple<Node, int> child)
         {
-            foreach (var item in AdjacenyList)
+            if (AdjacenyList.Contains(parent))
             {
-                var node = item.First.Value.Item1;
-                var tuple = item.First.Value.Item2;
+                parent.AddLast(child);
+            }
+            else
+            {
+                AdjacenyList.AddLast(parent);
+                parent.AddLast(child);
             }
         }
 
-        public void AddEdge(Node parent)
+        public List<Tuple<Node, int>> GetNeighbors(LinkedList<Tuple<Node, int>> parent)
         {
+            List<Tuple<Node, int>> list = new List<Tuple<Node, int>>();
 
+            foreach (Tuple<Node, int> item in parent)
+            {
+                list.Add(item);
+            }
+
+            return list;
+        }
+
+        public List<LinkedList<Tuple<Node, int>>> GetNodes()
+        {
+            List<LinkedList<Tuple<Node, int>>> list = new List<LinkedList<Tuple<Node, int>>>();
+
+            foreach (LinkedList<Tuple<Node, int>> item in AdjacenyList)
+            {
+                list.Add(item);
+            }
+
+            return list;
+        }
+
+        public int Size()
+        {
+            return AdjacenyList.Count;
         }
     }
 }
